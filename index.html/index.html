@@ -33,15 +33,15 @@
   }).addTo(map);
 
   // Load KML layers
-  var roadsLayer = omnivore.kml('roads.kml').on('ready', function() {
+  var roadsLayer = omnivore.kml('roads.kmz').on('ready', function() {
     this.setStyle({color: '#555'});
   }).addTo(map);
 
-  var plotsLayer = omnivore.kml('plots.kml').on('ready', function() {
+  var plotsLayer = omnivore.kml('plots.kmz').on('ready', function() {
     this.setStyle({color: 'blue'});
   }).addTo(map);
 
-  var parksLayer = omnivore.kml('parks.kml').on('ready', function() {
+  var parksLayer = omnivore.kml('parks.kmz').on('ready', function() {
     this.setStyle({color: 'green', fillOpacity: 0.5});
   }).addTo(map);
 
